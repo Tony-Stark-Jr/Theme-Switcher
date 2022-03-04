@@ -26,12 +26,12 @@
   --pure: #fff;
 }
 
-.theme-sepia{
-    --primary: #fbf1c7;
-    --secondary: #eadfb5;
-    --accent: #704214;
-    --font-color:#704214 ;
-    --pure: #fff;
+.theme-sepia {
+  --primary: #fbf1c7;
+  --secondary: #eadfb5;
+  --accent: #704214;
+  --font-color: #704214;
+  --pure: #fff;
 }
 
 * {
@@ -87,6 +87,10 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+nav ul li a:hover{
+  color: var(--accent);
+}
+
 nav ul li select {
   display: inline-block;
   height: 30px;
@@ -127,14 +131,22 @@ header p {
 header button {
   background-color: var(--accent);
   color: var(--pure);
-  border: none;
+  border: solid 1px var(--accent);
   padding: 0.6rem 1rem;
   border-radius: 50px;
   outline: none;
   cursor: pointer;
   margin-top: 1rem;
   text-transform: uppercase;
+
 }
+
+header button:hover{
+background-color: var(--secondary);
+color: var(--accent);
+border: solid 1px var(--accent);
+}
+
 
 section.tutorials {
   background: var(--secondary);
